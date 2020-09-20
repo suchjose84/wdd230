@@ -3,35 +3,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="index.css">
     <title>WDD230 Assignment Portal </title>
     
   </head>
 
   <body>
-    <header>
-      <h1>Jose H. Such</h1>
-      <img id="jojoImage" src="/images/mypic.jpg" alt="profilePic">
+    <div class="content">
+      <header>
+        <h1>
+          Jose H. Such
+          <img src="images/mypic.jpg" alt="profileImage">
 
-    </header>
-    <main>
-      <h2>WDD 230: Assignment Portal</h2>
-      <nav>
-        <ul>
-          <li>Lesson 02: <a href="https://www.google.com/">Assignment Link</a></li>
-          <li>Lesson 03: <a href="https://www.google.com/">Assignment Link</a></li>
-          <li>Lesson 04: <a href="https://www.google.com/">Link</a>|<a href="https://www.google.com/">Link</a></li>
-        </ul>
-      </nav>
-    </main>
+        </h1>
+        
+      </header>
+      <main>
 
-    <footer>
-      <p>&#169; year | Jose H. Such | Naga City, Philippines | BYU Online Learning</p>
-      <p>Last Updated: Date/Time</p>
+        <h2>WDD 230: Assignment Portal</h2>
+        <nav>
+          <ul>
+            <li>Lesson 02: <a href="https://www.google.com/" target="_blank">Assignment Link</a></li>
+            <li>Lesson 03: <a href="https://www.youtube.com/" target="_blank">Assignment Link</a></li>
+            <li>Lesson 04: <a href="https://www.twitter.com/" target="_blank">
+              Link</a>|<a href="https://www.facebook.com/" target="_blank">Link</a></li>
+          </ul>
+        </nav>
+      </main>
 
-    </footer>
+      <footer>
+        <p id="line1">&#169;<span id="currentYear"></span>| Jose H. Such | Naga City, Philippines | BYU Online Learning</p>
+        <p id="line2">Last Updated: <span id="dateTime"></span></p>
 
+        <script src="index.js"></script>
 
+      </footer>
+
+    </div>
   </body>
 
 
