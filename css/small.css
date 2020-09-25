@@ -41,8 +41,8 @@ main{
 
 h2{
     border-style: none none solid none;
-    border-color: #DCDCDC;
-    border-width: 2px;
+    border-color: #777; 
+    border-width: 1.5px;
     font-size: 1rem;
     
 
