@@ -29,17 +29,16 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-    
-    
-    
+}
+
+a:hover{
+    color:green;
 
 }
 
 img{
     width: 100%;
     height: auto;
-    
-    
 }
 
 section{
