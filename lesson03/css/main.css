@@ -39,7 +39,7 @@ body{
     
 }
 .logo img{
-    height: 80px;
+    max-height: 80px;
     min-width: auto;
 }
 #logoWeather{
@@ -95,8 +95,9 @@ nav ul li a.active{
 
 main {
     color: #333333;
-    padding: 0 20px;
+    padding: 0 10px;
     height: 100%;
+    display: block;
 }
 main h1,h2,h3,h4{
     font-family: 'Merriweather', serif;
@@ -104,6 +105,11 @@ main h1,h2,h3,h4{
 main p,li{
     font-size: 1rem;
 }
+
+main img{
+    border: solid 2px #333333;
+
+    }
 
 .domainName {
     font-size: 1.5rem;
@@ -117,6 +123,7 @@ footer{
     padding: 0.75rem;
     color: white;
     margin-top: 500px;
+    padding: 0px;
     
     
 }
@@ -139,11 +146,14 @@ footer #line2{
     border: 2px solid #333333;
 
 }
-.colorMain #pageImage{
+#pageImage{
     max-width: 900px;
 }
-.colorMain #primary{
-    max-width: 900px;
+#primary{
+    max-width: 425px;
+}
+#secondary{
+    max-width: 425px;
 }
 
 .colorFooter{
@@ -156,6 +166,16 @@ footer #line2{
     border: 1px solid #333333;
     border-collapse: collapse;
 
+}
+
+/*This part is for WebAudience.html*/
+
+.colorFooter{
+    margin-top: 150px;
+}
+
+#dadaImg, #bryanImg{
+    max-width: 250px;
 }
 
 

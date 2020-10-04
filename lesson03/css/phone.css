@@ -1,10 +1,71 @@
 @media (max-width: 550px){
+    
     nav{
         max-height: 120px;
     }
 
     nav ul{
         top: 120px;
+    }
+    
+    main{
+        padding: 3px;
+        font-size: 14px;
+    }
+
+    #pageImage{
+        max-width: 300px;
+    }
+
+    #primary{
+        max-width: 300px;   
+    }
+
+    #secondary{
+        max-width: 300px;
+    }
+
+    main img{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    p,li{
+        font-size: .8rem;
+    }
+    
+    .domainName{
+        font-size: 1.3rem;
+    }
+    
+    
+    footer #line1{
+        padding-top: .95em;
+        margin: 0;
+    }
+
+    footer #line2{
+        font-size: .75em;
+    }
+
+    .logo p{
+        font-size: 1.5rem;
+        
+    }
+    .logo img{
+        max-width: 70px;
+    }
+    nav ul{
+        top: 80px;
+    }
+
+    nav ul li{
+        margin: 30px 0;
+    }
+    nav ul li a{
+        
+        font-weight: 600;
+        font-size: 1rem;
     }
 
 }

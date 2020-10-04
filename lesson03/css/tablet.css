@@ -41,4 +41,8 @@
         display: flex;
     }
 
+    #pageImage{
+        max-width: 500px;
+    }
+
 }
