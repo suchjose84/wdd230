@@ -1,0 +1,44 @@
+@media (max-width: 940px){
+    nav{
+        justify-content: space-between;
+    }
+
+    nav ul{
+        padding: 0;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+        left: -120%;
+        background: white;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        margin: 0 auto;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        color: #666600;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        background-color: #666600;
+        color: white;
+    }
+
+    nav .menu-btn{
+        
+        display: flex;
+    }
+
+}

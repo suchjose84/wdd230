@@ -1,0 +1,10 @@
+@media (max-width: 550px){
+    nav{
+        max-height: 120px;
+    }
+
+    nav ul{
+        top: 120px;
+    }
+
+}
