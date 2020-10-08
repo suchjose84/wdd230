@@ -22,7 +22,6 @@ Secondary - #666600 - yellow - for footer contrast
 body{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     max-height: 100%;
@@ -74,7 +73,7 @@ nav ul {
     max-width: 100%;
 }
 nav ul li{
-    margin: 0 5x;
+    margin: 0 5px;
 }
 
 nav ul li a {
