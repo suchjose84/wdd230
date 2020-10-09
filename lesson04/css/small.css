@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Finger+Paint&family=Open+Sans&family=Poppins&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/*
+FONTS
+font-family: 'Cinzel', serif;
+font-family: 'Finger Paint', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Merriweather', serif;
+*/
+
+/*
+COLORS
+Primary - #666600 - dark yellow - background
+Primary - #F5F5DC - beige - background
+Primary - #333333 - lighter black - paragraph font color
+Secondary - #99FFFF - light sky blue - for text in logo
+Secondary - #666600 - yellow - for footer contrast
+*/
+
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li a{
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #F5F5DC;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #666600;
+}
+
+header picture{
+    max-width: 80px;
+}
+
+header img{
+    max-width: 100%;
+}
+
+header ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+    header ul li:nth-child(1){
+        font-family: 'Finger Paint', cursive;
+        font-size: 1.6rem;
+    }
+    header ul li:nth-child(1) #weatherText{
+        color: #00BFFF;
+    }
+
+    header ul li:nth-child(2){
+        font-size: .8rem;
+    }
+
+
+
+
+nav{
+    background-color: #BDB76B;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li:first-child{
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #00BFFF;
+    
+}
+#menuText{
+    font-size: 1rem;
+    
+}
+
+.navigation li{
+    display: none;
+}
+
+.responsive li{
+    display: block;
+}
+nav ul li a{
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #333333;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2); color: #fff;
+
+}
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-weight: 400;
+
+}
+
+
+
+
+main{
+    height: 1vh;
+}
+
+main h2{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+main .contentBox{
+    border: rgba(0,0,0,0.3) dotted;
+    margin: 5px;
+    padding: 20px 10px;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: #666600;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+footer ul li{
+    padding: 5px;
+}
+footer ul li:nth-child(2){
+    color: yellow;
+}
+
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
