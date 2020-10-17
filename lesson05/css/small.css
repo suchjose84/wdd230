@@ -166,8 +166,8 @@ h1 {
     font-family: 'Merriweather', serif;
 }
 
-main section {
-    padding: 0 5px;
+main{
+    padding: 0 3px;
 }
 
 /*Hero Pic and Summary Section */
@@ -194,6 +194,9 @@ main .summaryBox {
     color: #333333;
     font-weight: 600;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -203,10 +206,9 @@ main .summaryBox p {
     padding: 0;
     margin: 0;
 }
-
-
 main .summaryBox table {
     font-size: .7rem;
+    align-self: flex-start;
 }
 
 table .firstRow {
@@ -272,13 +274,17 @@ main .articleBox {
     max-width: 300px;
     background-color: rgba(0, 0, 0, 0.2);
     margin: 3rem auto 0 auto;
-    padding: 1.5rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+main .articleBox .articleContents{
+    margin: 1.2rem;
+
+}
+
 main .articleBox img {
-    display: block;
-    max-width: 280px;
+    display: flex;
+    max-width: 100%;
     margin: 0 auto;
     box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
 
@@ -304,9 +310,16 @@ main .author {
     color: rgba(0, 0, 0, 0.8)
 }
 
+main .hasDropCap a{
+    color: blue;
+}
+main .hasDropCap a:hover{
+    color: green;
+}
+
 /* Address Section */
 
-main .locationSection {
+.locationSection {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     background-color: rgb(102, 102, 0, .4);
@@ -315,37 +328,37 @@ main .locationSection {
     max-width: 100%;
 }
 
-main .locationSection .mapBox img {
+.locationSection .mapBox img {
     display: none;
 
 }
 
-main .addressBox {
+.addressBox {
     grid-column: 1 / 2;
     display: flex;
 
 
 }
 
-main .addressBox h5 {
+.addressBox h5 {
     margin: 0;
     padding: 0;
     font-size: 1rem;
 }
 
-main .addressBox p {
+.addressBox p {
     margin: 0;
     padding: 0;
     font-size: 1rem;
 }
 
-main .addressBox img {
+.addressBox img {
     max-height: 1.1rem;
     padding: 0;
     margin: 0;
 }
 
-main picture img {
+.addressbox picture img {
     max-width: 1.3rem;
 
 }

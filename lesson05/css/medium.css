@@ -61,7 +61,7 @@
     }
 
     main .summaryBox p {
-        margin: 15px 30px 15px 0;
+        margin: 0 0 15px 0;
         font-size: 1.5rem;
     }
 
@@ -80,6 +80,7 @@
 
     main .articleBox {
         max-width: 600px;
+        margin: 3rem auto 0 auto;
     }
 
     main .articleBox h3 {
@@ -88,6 +89,7 @@
 
     main .articleBox img {
         float: right;
+        max-width: 230px;
     }
 
 

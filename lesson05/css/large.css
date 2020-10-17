@@ -15,7 +15,10 @@
 
     main .heroBox {
         max-width: 850px;
+    }
 
+    main .summaryBox table {
+        font-size: 1.2rem;
     }
 
 
@@ -28,6 +31,10 @@
     /* Article Section */
     main .articleBox {
         max-width: 850px;
+    }
+
+    main .articleBox img {
+        max-width: 280px;
     }
 
     /* Map Section */
