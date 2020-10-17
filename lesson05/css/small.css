@@ -13,48 +13,60 @@ font-family: 'Merriweather', serif;
 
 /*
 COLORS
-Primary - #666600 - dark yellow - background
-Primary - #F5F5DC - beige - background
-Primary - #333333 - lighter black - paragraph font color
-Secondary - #99FFFF - light sky blue - for text in logo
-Secondary - #666600 - yellow - for footer contrast
+Primary - #666600 - rgb(102,102,0) - dark yellow - background
+Primary - #F5F5DC - rgb(245,245,220) - beige - background
+Primary - #333333 - rgb(51,51,51) - lighter black - paragraph font color
+Secondary - #00BFFF - rgb(0, 191, 255) - light sky blue - for text in logo
+Secondary - #666600 - rgb(102, 102, 0) - yellow - for footer contrast
 */
 
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-li a{
+
+li a {
     text-decoration: none;
 }
 
-.banner{
-    display: none;
-    font-size: .8rem;
-}
-
-body{
+body {
     background-color: #F5F5DC;
     font-family: 'Open Sans', sans-serif;
 }
 
-header{
+/*Banner CSS */
+
+.banner {
+    background-color: rgb(255,255,0, .5);
+    display: none;
+    font-size: .8rem;
+    padding: 3px;
+}
+.banner p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*Header CSS */
+
+header {
     display: flex;
     justify-content: center;
     background-color: #666600;
 }
 
-header picture{
+header picture {
     max-width: 80px;
 }
 
-header img{
+header img {
     max-width: 100%;
 }
 
-header ul{
+header ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,129 +76,286 @@ header ul{
     text-align: center;
 
 }
-header ul li a{
+
+header ul li a {
     text-decoration: none;
     color: white;
     text-align: center;
 }
-    header ul li:nth-child(1){
-        font-family: 'Finger Paint', cursive;
-        font-size: 1.6rem;
-    }
-    header ul li:nth-child(1) #weatherText{
-        color: #00BFFF;
-    }
 
-    header ul li:nth-child(2){
-        font-size: .8rem;
-    }
-
-
-
-nav{
-    background-color: #BDB76B;
-    font-family: 'Open Sans', sans-serif;
-    
+header ul li:nth-child(1) {
+    font-family: 'Finger Paint', cursive;
+    font-size: 1.6rem;
 }
 
-nav ul{
+header ul li:nth-child(1) #weatherText {
+    color: #00BFFF;
+}
+
+header ul li:nth-child(2) {
+    font-size: .8rem;
+}
+
+
+/*Navigation CSS */
+
+nav {
+    background-color: #BDB76B;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li:first-child{
+nav ul li:first-child {
     display: block;
     background-color: transparent;
     border: none;
     font-size: .8rem;
     font-weight: 600;
-    
-}
-#menuText{
-    font-size: 1rem;
-    
+
 }
 
-.navigation li{
+#menuText {
+    font-size: 1rem;
+
+}
+
+.navigation li {
     display: none;
 }
 
-.responsive li{
+.responsive li {
     display: block;
 }
-nav ul li a{
+
+nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
     color: #333333;
-    border-top: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
-nav ul li.active a{
-    background-color: rgba(0,0,0,0.2); 
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
 
 }
-nav ul li a:hover{
-    background-color: rgba(0,0,0,0.4);
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     font-weight: 400;
 
 }
 
 
+/*Main Page CSS */
 
-
-main{
-    height: 1vh;
-}
-
-main h2{
+main h2,
+h3 {
     text-align: center;
     font-family: 'Merriweather', serif;
 }
-main div{
+
+main section {
     padding: 0 5px;
 }
 
-main .heroBox{
+/*Hero Pic and Summary Section */
+
+main .heroBox {
     margin: 0 auto;
     position: relative;
     max-width: 300px;
-    
+
 }
 
-main .heroBox img{
+main .heroBox img {
     max-width: 100%;
-    
+    opacity: .8;
+
 }
-main .heroBox section{
+
+main .summaryBox {
     position: absolute;
     top: 10px;
     left: 30px;
-    background: radial-gradient(circle, rgba(255,255,0,.6) 0%, rgba(102,102,0,.6) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 0, .6) 0%, rgba(102, 102, 0, .6) 100%);
     padding: 0 10px;
-    color: rgba(51,51,51,1);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    color: #333333;
+    font-weight: 600;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
 }
 
-main .heroBox section p{
-    margin: 5px 0;
+main .summaryBox p {
+    margin: 5px 0 5px 0;
     font-size: .8rem;
     border-bottom: 2px solid;
 }
-main .heroBox section table{
+
+main .summaryBox table {
     font-size: .7rem;
 }
 
-table .firstRow{
+table .firstRow {
     text-align: right;
 }
-table .secondRow{
+
+table .secondRow {
     text-align: left;
+    color: purple;
+}
+
+
+/*Forecast Section */
+
+main .weatherSection {
+    display: none;
+}
+
+.forecastBox {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.weatherCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin-right: 5px;
+    border: 1px solid black;
+}
+
+.weatherCard img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.weatherCard p {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: #666600;
+}
+
+.weatherCard .secondP {
+    border-bottom: none;
+    background-color: transparent;
+}
+
+.weatherCard .firstP {
+    color: white;
+}
+
+
+/*Article Section */
+
+main .articleBox {
+    display: block;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 3rem auto 0 auto;
+    padding-top: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+main .articleBox img {
+    display: block;
+    max-width: 280px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+main .articleBox h4 {
+    font-family: 'Merriweather', serif;
+}
+
+.hasDropCap:first-letter {
+    font-size: 2.5rem;
+    float: left;
+    margin: 0.21em 0.22em 0.1em 0;
+    line-height: .65em;
+    font-family: 'Merriweather', serif;
+
+}
+
+main .author{
+    font-size: .8rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+/* Address Section */
+
+main .addressSection{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: rgb(102,102,0, .4);
+    margin: 3rem auto 0 auto;
+    padding: 0;
+    max-width: 100%;
+}
+
+main .addressSection .mapBox img{
+    display: none;
+    
+}
+
+main .addressBox{
+    grid-column: 1 / 2;
+    display: flex;
+    padding: 1.5rem;
+    
+}
+main .addressBox h5{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+main .addressBox p{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+main .addressBox img{
+    max-height: 1.1rem;
+    padding: 0;
+    margin: 0;  
+}
+
+main picture img{
+    max-width: 1.3rem;
+    
+
+}
+
+.address{
+    margin: auto;
+}
+
+
+
+
+
+main .addressBox li:nth-child(1){
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 
@@ -198,10 +367,8 @@ table .secondRow{
 
 
 
-footer{
+footer {
     width: 100%;
-    position: fixed;
-    bottom: 0px;
     background-color: #666600;
     color: white;
     text-align: center;
@@ -209,17 +376,18 @@ footer{
     padding: 5px 0;
     margin: 0 auto;
 }
-footer ul li{
+
+footer ul li {
     padding: 5px;
 }
-footer ul li:nth-child(2){
+
+footer ul li:nth-child(2) {
     color: yellow;
 }
 
 
-.clearfix:after{
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
-

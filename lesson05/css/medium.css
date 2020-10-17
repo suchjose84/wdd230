@@ -1,38 +1,117 @@
-@media only screen and (min-width: 35em){
-    
+@media only screen and (min-width: 35em) {
 
-    header ul li:nth-child(1){
+
+    .banner {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .banner p{
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li:nth-child(1) {
         font-size: 2.2rem;
     }
-    header ul li:nth-child(2){
+
+    header ul li:nth-child(2) {
         font-size: .9rem;
     }
 
-    header picture{
+    header picture {
         max-width: 100px;
 
     }
 
-   .navigation{
-       display: flex;
-       padding: 0;
-       margin: 0;
-   }
-    
-    .navigation li{
+    .navigation {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation li {
         display: block;
         flex: 1 1 auto;
-    } 
+    }
 
     nav ul li a {
         border: none;
-        border-right: 1px solid rgba(0,0,0,0.3);
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
         padding: .8rem 1rem;
         font-size: .8rem;
         font-weight: bold;
     }
-    .navigation li:first-child{
+
+    .navigation li:first-child {
         display: none;
+    }
+
+
+    main .heroBox {
+        max-width: 600px;
+
+    }
+
+    main .summaryBox {
+        top: 30px;
+        left: 50px;
+    }
+
+    main .summaryBox p {
+        margin: 15px 30px 15px 0;
+        font-size: 1.5rem;
+    }
+
+    main .summaryBox table {
+        font-size: 1rem;
+    }
+
+
+    /*Forecast Section */
+
+    main .weatherSection {
+        display: block;
+    }
+
+    /* Article Section */
+
+    main .articleBox {
+        max-width: 600px;
+    }
+
+    main .articleBox h4 {
+        margin-top: 0px;
+    }
+
+    main .articleBox img {
+        float: right;
+        margin: 0 1rem 1rem 1rem;
+
+    }
+
+
+    /* Map Section */
+
+    main .addressSection {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 620px;
+    }
+
+    main .addressSection .mapBox {
+        grid-column: 1 / 2;
+
+    }
+
+    main .addressSection .mapBox img {
+        display: block;
+        margin: 1.5rem auto;
+        width: 80%;
+        border: 1px solid rgb(51, 51, 51, .5);
+    }
+
+    main .addressBox {
+        grid-column: 2 / 3;
+
     }
 
 
@@ -40,4 +119,8 @@
 
 
 
-}/*end medium*/
+
+
+}
+
+/*end medium*/
