@@ -320,24 +320,20 @@ main .hasDropCap a:hover{
 /* Address Section */
 
 .locationSection {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    background-color: rgb(102, 102, 0, .4);
+    background-color: rgb(102,102,0, .3);
     margin: 3rem auto 0 auto;
     padding: 1.1rem;
     max-width: 100%;
 }
 
-.locationSection .mapBox img {
+.locationContent .mapBox img{
     display: none;
-
 }
 
 .addressBox {
     grid-column: 1 / 2;
     display: flex;
-
-
+    justify-content: space-around;
 }
 
 .addressBox h5 {
@@ -359,7 +355,7 @@ main .hasDropCap a:hover{
 }
 
 .addressbox picture img {
-    max-width: 1.3rem;
+    max-width: 1.5rem;
 
 }
 

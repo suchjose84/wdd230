@@ -39,9 +39,10 @@
 
     /* Map Section */
 
-    main .locationSection {
+    .locationContent {
         max-width: 870px;
     }
+    
 
 
 
