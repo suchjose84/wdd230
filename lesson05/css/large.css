@@ -8,6 +8,34 @@
         font-size: 1rem;
     }
 
+    /* Main Page */
+
+
+    /* Weather Summary Section */
+
+    main .heroBox {
+        max-width: 850px;
+
+    }
+
+
+    /* 5-Day Forecast Section */
+
+    .forecastBox {
+        max-width: 700px;
+    }
+
+    /* Article Section */
+    main .articleBox {
+        max-width: 850px;
+    }
+
+    /* Map Section */
+
+    main .locationSection {
+        max-width: 870px;
+    }
+
 
 
 

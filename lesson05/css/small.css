@@ -39,12 +39,13 @@ body {
 /*Banner CSS */
 
 .banner {
-    background-color: rgb(255,255,0, .5);
+    background-color: rgb(255, 255, 0, .5);
     display: none;
     font-size: .8rem;
     padding: 3px;
 }
-.banner p{
+
+.banner p {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -159,7 +160,8 @@ nav ul li a:hover {
 /*Main Page CSS */
 
 main h2,
-h3 {
+h3,
+h1 {
     text-align: center;
     font-family: 'Merriweather', serif;
 }
@@ -188,7 +190,7 @@ main .summaryBox {
     top: 10px;
     left: 30px;
     background: radial-gradient(circle, rgba(255, 255, 0, .6) 0%, rgba(102, 102, 0, .6) 100%);
-    padding: 0 10px;
+    padding: 10px;
     color: #333333;
     font-weight: 600;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -196,10 +198,12 @@ main .summaryBox {
 }
 
 main .summaryBox p {
-    margin: 5px 0 5px 0;
     font-size: .8rem;
     border-bottom: 2px solid;
+    padding: 0;
+    margin: 0;
 }
+
 
 main .summaryBox table {
     font-size: .7rem;
@@ -268,7 +272,7 @@ main .articleBox {
     max-width: 300px;
     background-color: rgba(0, 0, 0, 0.2);
     margin: 3rem auto 0 auto;
-    padding-top: 1.5rem;
+    padding: 1.5rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -280,7 +284,8 @@ main .articleBox img {
 
 }
 
-main .articleBox h4 {
+main .articleBox h3 {
+    text-align: left;
     font-family: 'Merriweather', serif;
 }
 
@@ -293,7 +298,7 @@ main .articleBox h4 {
 
 }
 
-main .author{
+main .author {
     font-size: .8rem;
     font-style: italic;
     color: rgba(0, 0, 0, 0.8)
@@ -301,71 +306,55 @@ main .author{
 
 /* Address Section */
 
-main .addressSection{
+main .locationSection {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    background-color: rgb(102,102,0, .4);
+    background-color: rgb(102, 102, 0, .4);
     margin: 3rem auto 0 auto;
-    padding: 0;
+    padding: 1.1rem;
     max-width: 100%;
 }
 
-main .addressSection .mapBox img{
+main .locationSection .mapBox img {
     display: none;
-    
+
 }
 
-main .addressBox{
+main .addressBox {
     grid-column: 1 / 2;
     display: flex;
-    padding: 1.5rem;
-    
+
+
 }
-main .addressBox h5{
+
+main .addressBox h5 {
     margin: 0;
     padding: 0;
     font-size: 1rem;
 }
 
-main .addressBox p{
+main .addressBox p {
     margin: 0;
     padding: 0;
     font-size: 1rem;
 }
 
-main .addressBox img{
+main .addressBox img {
     max-height: 1.1rem;
     padding: 0;
-    margin: 0;  
+    margin: 0;
 }
 
-main picture img{
+main picture img {
     max-width: 1.3rem;
-    
 
 }
 
-.address{
+.address {
+    display: block;
     margin: auto;
+
 }
-
-
-
-
-
-main .addressBox li:nth-child(1){
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-
-
-
-
-
-
-
-
 
 footer {
     width: 100%;
@@ -384,6 +373,12 @@ footer ul li {
 footer ul li:nth-child(2) {
     color: yellow;
 }
+
+
+
+
+
+
 
 
 .clearfix:after {

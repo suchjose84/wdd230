@@ -47,6 +47,9 @@
     }
 
 
+    /* Weather Summary Section */
+
+
     main .heroBox {
         max-width: 600px;
 
@@ -79,32 +82,30 @@
         max-width: 600px;
     }
 
-    main .articleBox h4 {
+    main .articleBox h3 {
         margin-top: 0px;
     }
 
     main .articleBox img {
         float: right;
-        margin: 0 1rem 1rem 1rem;
-
     }
 
 
     /* Map Section */
 
-    main .addressSection {
+    main .locationSection {
         grid-template-columns: repeat(2, 1fr);
         max-width: 620px;
     }
 
-    main .addressSection .mapBox {
+    main .locationSection .mapBox {
         grid-column: 1 / 2;
 
     }
 
-    main .addressSection .mapBox img {
+    main .locationSection .mapBox img {
         display: block;
-        margin: 1.5rem auto;
+        margin: auto;
         width: 80%;
         border: 1px solid rgb(51, 51, 51, .5);
     }
