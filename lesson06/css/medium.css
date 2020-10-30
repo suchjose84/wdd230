@@ -1,0 +1,125 @@
+@media only screen and (min-width: 35em) {
+
+
+    .banner {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .banner p{
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li:nth-child(1) {
+        font-size: 2.2rem;
+    }
+
+    header ul li:nth-child(2) {
+        font-size: .9rem;
+    }
+
+    header picture {
+        max-width: 100px;
+
+    }
+
+    .navigation {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+
+    /* Weather Summary Section */
+
+    main .summaryBox {
+        top: 30px;
+        left: 50px;
+    }
+
+    main .summaryBox p {
+        margin: 0 0 15px 0;
+        font-size: 1.5rem;
+    }
+
+    main .summaryBox table {
+        font-size: 1rem;
+    }
+
+
+    /*Forecast Section */
+
+    main .weatherSection {
+        display: block;
+    }
+
+    /* Article Section */
+
+    main .articleBox {
+        max-width: 600px;
+        margin: 3rem auto 0 auto;
+    }
+
+    main .articleBox h3 {
+        margin-top: 0px;
+    }
+
+    main .articleBox img {
+        float: right;
+        max-width: 230px;
+    }
+
+
+    /* Map Section */
+
+    .locationContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .locationContent .mapBox{
+        grid-column: 1 / 2;
+    }
+
+    .locationContent .addressBox{
+        grid-column: 2 / 3;
+    }
+
+
+    .locationContent .mapBox img {
+        display: block;
+        margin: auto;
+        width: 80%;
+        border: 1px solid rgb(51, 51, 51, .5);
+    }
+
+    
+
+
+
+
+
+
+
+
+}
+
+/*end medium*/
