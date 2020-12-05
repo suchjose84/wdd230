@@ -11,34 +11,7 @@
     /* Main Page */
 
 
-    /* Weather Summary Section */
-
-
-    main .summaryBox table {
-        font-size: 1.2rem;
-    }
-
-
-    /* 5-Day Forecast Section */
-
-    .forecastBox {
-        max-width: 700px;
-    }
-
-    /* Article Section */
-    main .articleBox {
-        max-width: 850px;
-    }
-
-    main .articleBox img {
-        max-width: 280px;
-    }
-
-    /* Map Section */
-
-    .locationContent {
-        max-width: 870px;
-    }
+    
     
 
 

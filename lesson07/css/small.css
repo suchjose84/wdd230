@@ -159,220 +159,25 @@ nav ul li a:hover {
 
 /*Main Page CSS */
 
-main h2,
-h3,
-h1 {
-    text-align: center;
-    font-family: 'Merriweather', serif;
+main figure{
+    margin: 0 5px;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-main{
-    padding: 0 3px;
+
+main figure picture {
+    width: 100%;
 }
 
-/*Hero Pic and Summary Section */
-
-main .heroBox {
-    display: block;
-    position: relative;
-    border: solid 1px black;
-    width: 90%;
-    margin: 0 auto;
+main figure picture img{
+    width: 100%;
     
 }
 
-main .heroImage img{
-    width: 100%;
-    display: block; 
-    margin: 0 auto;
-    opacity: .8;
-
-}
 
 
-main .summaryBox {
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    background: radial-gradient(circle, rgba(255, 255, 0, .6) 0%, rgba(102, 102, 0, .6) 100%);
-    padding: 10px;
-    color: #333333;
-    font-weight: 600;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-main .summaryBox p {
-    font-size: .8rem;
-    border-bottom: 2px solid;
-    padding: 0;
-    margin: 0;
-}
-
-main .summaryBox table {
-    font-size: .7rem;
-    align-self: flex-start;
-}
-
-table .firstRow {
-    text-align: right;
-}
-
-table .secondRow {
-    text-align: left;
-    color: purple;
-}
-
-
-/*Forecast Section */
-
-main .weatherSection {
-    display: none;
-}
-
-.forecastBox {
-    display: flex;
-    flex-direction: row;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.weatherCard {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 0px;
-    margin-right: 5px;
-    border: 1px solid black;
-}
-
-.weatherCard img {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.weatherCard p {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    background-color: #666600;
-}
-
-.weatherCard .secondP {
-    border-bottom: none;
-    background-color: transparent;
-    margin-bottom: .5rem;
-    font-weight: bold;
-    color: #333333;
-}
-
-.weatherCard .firstP {
-    color: white;
-}
-
-
-/*Article Section */
-
-main .articleBox {
-    display: block;
-    max-width: 300px;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 1.5rem auto 0 auto;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-main .articleBox .articleContents{
-    margin: 1.2rem;
-
-}
-
-main .articleBox img {
-    display: flex;
-    max-width: 100%;
-    margin: 0 auto;
-    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
-
-}
-
-main .articleBox h3 {
-    text-align: left;
-    font-family: 'Merriweather', serif;
-}
-
-.hasDropCap:first-letter {
-    font-size: 2.5rem;
-    float: left;
-    margin: 0.21em 0.22em 0.1em 0;
-    line-height: .65em;
-    font-family: 'Merriweather', serif;
-
-}
-
-main .author {
-    font-size: .8rem;
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.8)
-}
-
-main .hasDropCap a{
-    color: blue;
-}
-main .hasDropCap a:hover{
-    color: green;
-}
-
-/* Address Section */
-
-.locationSection {
-    background-color: rgb(102,102,0, .3);
-    margin: 1.5rem auto 0 auto;
-    padding: 1.1rem;
-    max-width: 100%;
-}
-
-.locationContent .mapBox img{
-    display: none;
-}
-
-.addressBox {
-    grid-column: 1 / 2;
-    display: flex;
-    justify-content: space-around;
-}
-
-.addressBox h5 {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-}
-
-.addressBox p {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-}
-
-.addressBox img {
-    max-height: 1.1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.addressbox picture img {
-    max-width: 1.5rem;
-
-}
-
-.address {
-    display: block;
-    margin: auto;
-
-}
 
 footer {
     width: 100%;
