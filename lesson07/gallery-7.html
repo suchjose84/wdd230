@@ -34,11 +34,11 @@
         <ul class="navigation">
             <li><a class="toggleMenu" href="#">&#9776; <span id="menuText">Menu</span></a></li>
             <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
         </ul>
 
     </nav>
@@ -49,40 +49,46 @@
 
             <h1>Weather Gallery</h1>
 
-            <figure>
+            <div class="container">
 
-                <picture>
-                    <img src="images/lazyload/placeholderImage.png"
-                        data-src="images/lazyload/pic1.jpg"
-                        alt="picture1">
-                </picture>
-                <picture>
-                    <img src="images/lazyload/placeholderImage.png"
-                        data-src="https://images.unsplash.com/photo-1605618928490-468afa38337e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80"
-                        alt="picture2">
-                </picture>
-                <picture>
-                    <img src="images/lazyload/placeholderImage.png"
-                        data-src="https://images.unsplash.com/photo-1575602447714-7effec0d671c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=639&q=80"
-                        alt="picture3">
-                </picture>
-                <picture>
-                    <img src="images/lazyload/placeholderImage.png"
-                        data-src="https://images.unsplash.com/photo-1606730775760-6fc7ba0b46ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=645&q=80"
-                        alt="picture4">
-                </picture>
-                <picture>
-                    <img src="images/lazyload/placeholderImage.png"
-                        data-src="https://images.unsplash.com/photo-1555256285-008fa85973a7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=632&q=80"
-                        alt="picture6">
-                </picture>
-                <picture>
-                    <img src="images/lazyload/placeholderImage.png"
-                        data-src="https://images.unsplash.com/photo-1606411009963-3c3192b48461?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-                        alt="picture6 ">
-                </picture>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic1.jpg" alt="picture1">
+                    <figcaption>Studying the upcoming hailstorm.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic2.jpg" alt="picture2">
+                    <figcaption>Lightning strike while boating.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic3.jpg" alt="picture3">
+                    <figcaption>Rainy on the way home.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic4.jpg" alt="picture4">
+                    <figcaption>Geese on snow.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic5.jpg" alt="picture6">
+                    <figcaption>Clearsky view on the plane.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic6.jpg" alt="picture6">
+                    <figcaption>Melting snow on the car.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic7.jpg" alt="picture7">
+                    <figcaption>Sunny in the dessert.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic8.jpg" alt="picture8">
+                    <figcaption>Stormy morning.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic9.jpg" alt="picture9">
+                    <figcaption>Foggy morning.</figcaption>
+                </figure>
 
-            </figure>
+            </div>
 
 
 
@@ -115,6 +121,8 @@
             }
         });
     </script>
+
+    <script src="script/lazyload.js"></script>
 
 </body>
 

@@ -159,20 +159,33 @@ nav ul li a:hover {
 
 /*Main Page CSS */
 
-main figure{
-    margin: 0 5px;
-    border: 2px solid red;
+main, main .gallery{
+    margin: 0px;
+}
+
+main .gallery h1{
+    text-align: center;
+}
+
+main .container{
+    margin: 0 3% 30px 3%;
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 15px;
 }
 
-
-main figure picture {
+main figure{
+    margin: 0;
     width: 100%;
 }
 
-main figure picture img{
+main figure img{
     width: 100%;
+    
+}
+
+main figure figcaption{
+    font-size: .85rem;
     
 }
 
