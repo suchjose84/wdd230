@@ -159,6 +159,10 @@ nav ul li a:hover {
 
 /*Main Page CSS */
 
+main{
+    color: rgb(51,51,51);
+}
+
 main, main .gallery{
     margin: 0px;
 }
@@ -166,7 +170,6 @@ main, main .gallery{
 h1, h2, h3{
     text-align: center;
     font-family: 'Merriweather', serif;
-    color: rgb(51,51,51);
 }
 
 main .container{
