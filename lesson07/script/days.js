@@ -8,20 +8,7 @@ let days2 = [
     "Thu",
     "Fri",
     "Sat",
-    "Sun",
-    "Mon",
-    "Tue",
-    "Wed",
-    "Thu",
-    "Fri",
-    "Sat",
-    "Sun",
-    "Mon",
-    "Tue",
-    "Wed",
-    "Thu",
-    "Fri",
-    "Sat",
+    
 
 ]
 let firstDay = days2[day2 + 1];
