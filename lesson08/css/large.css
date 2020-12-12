@@ -10,12 +10,9 @@
 
     /* Main Page */
 
-    main .container{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    main .container figure img:hover{
-        box-shadow: 0 0 30px 5px rgba(102, 102, 0, 0.8);
+    main form fieldset{
+        width: 60%;
+        max-width: 30rem; 
         
     }
     
