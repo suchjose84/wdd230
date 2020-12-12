@@ -189,6 +189,9 @@ main h4{
     font-family: 'Poppins', sans-serif;
 
 }
+main p{
+    text-align: center;
+}
 
 form fieldset{
     margin: 2rem auto;
@@ -338,4 +341,10 @@ footer ul li:nth-child(2) {
     content: "";
     display: table;
     clear: both;
+}
+
+
+body.stormResponse{ 
+    text-align: left;
+
 }
