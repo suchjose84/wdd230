@@ -192,7 +192,8 @@ main h4{
 
 form fieldset{
     margin: 2rem auto;
-    border: 1px solid #445ba9;
+    border: 1px solid #999;
+    
     border-radius: 10px;
     padding: .5rem 2%;
     max-width: 98%;
