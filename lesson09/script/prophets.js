@@ -21,13 +21,22 @@ fetch(requestURL)
       pDateOfBirth.innerHTML = "Date of birth: " + prophets[i].birthdate;
       pPlaceOfBirth.innerHTML = "Place of birth: " + prophets[i].birthplace;
       img.setAttribute('src', prophets[i].imageurl);
+      img.setAttribute('data-src', prophets[i].imageurl);
+      img.setAttribute('alt', 'prophetImage');
 
       card.appendChild(h2);
       card.appendChild(pDateOfBirth);
       card.appendChild(pPlaceOfBirth);
+      
       card.appendChild(img);
 
       document.querySelector('.cards').appendChild(card);
 
     }
-  });
+});
+
+
+
+
+
+
