@@ -12,7 +12,7 @@ fetch(apiURL)
         const windSpeed = document.querySelector('#windSpeedValue');
 
         summary.innerHTML = jsObject.weather[0].description;
-        high.innerHTML = parseInt(jsObject.main.temp_max);
+        high.innerHTML = Math.round(jsObject.main.temp_max);
         humidity.innerHTML = jsObject.main.humidity;
         windSpeed.innerHTML = jsObject.wind.speed;
 
@@ -58,7 +58,7 @@ fetch(apiURL2)
             const isrc = `https://openweathermap.org/img/wn/${forecast[day].weather[0].icon}.png`;
 
             document.getElementById(`day${day+1}`).textContent = weekdays[d.getDay()];
-            document.getElementById(`temp${day+1}`).textContent = parseInt(x.main.temp);
+            document.getElementById(`temp${day+1}`).textContent = Math.round(x.main.temp);
             weatherIcon.setAttribute('src', isrc);
             weatherIcon.setAttribute('alt', forecast[day].weather[0].description);
             day++;
