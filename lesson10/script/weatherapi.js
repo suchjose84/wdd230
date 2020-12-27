@@ -12,7 +12,7 @@ fetch(apiURL)
         const windSpeed = document.querySelector('#windSpeedValue');
 
         summary.innerHTML = jsObject.weather[0].description;
-        high.innerHTML = jsObject.main.temp_max;
+        high.innerHTML = parseInt(jsObject.main.temp_max);
         humidity.innerHTML = jsObject.main.humidity;
         windSpeed.innerHTML = jsObject.wind.speed;
 
