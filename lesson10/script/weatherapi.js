@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=06087b0df1c638d2543f3f92fd17fde4";
+const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=06087b0df1c638d2543f3f92fd17fde4";
 
 fetch(apiURL)
     .then(response => response.json())
@@ -38,7 +38,7 @@ fetch(apiURL)
 
     });
 
-const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=06087b0df1c638d2543f3f92fd17fde4";
+const apiURL2 = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=06087b0df1c638d2543f3f92fd17fde4";
 
 fetch(apiURL2)
     .then(response => response.json())
@@ -55,7 +55,7 @@ fetch(apiURL2)
         forecast.forEach(x => {
             const d = new Date(x.dt_txt);
             const weatherIcon = document.querySelector(`#icon${day+1}`);
-            const isrc = `https://openweathermap.org/img/wn/${forecast[day].weather[0].icon}.png`;
+            const isrc = `http://openweathermap.org/img/wn/${forecast[day].weather[0].icon}.png`;
 
             document.getElementById(`day${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`temp${day+1}`).textContent = parseInt(x.main.temp);
