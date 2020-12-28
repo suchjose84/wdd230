@@ -1,5 +1,5 @@
-var t = 32
-var s = 5
+var t = 0
+var s = 0
 var windChill = 0.00;
 
 document.getElementById("highValue").textContent = t;

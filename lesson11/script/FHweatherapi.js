@@ -6,13 +6,13 @@ fetch(apiURL)
         console.log(jsObject);
 
         const summary = document.querySelector('#description');
-        const high = document.querySelector('#high');
-        const wchill = document.querySelector('#windChill');
+        const high = document.querySelector('#highValue');
+        const wchill = document.querySelector('#windChillValue');
         const humidity = document.querySelector('#humidity');
         const windSpeed = document.querySelector('#windSpeedValue');
 
         summary.innerHTML = jsObject.weather[0].description;
-        high.innerHTML = Math.round(jsObject.main.temp_max);
+        high.innerHTML = jsObject.main.temp_max;
         humidity.innerHTML = jsObject.main.humidity;
         windSpeed.innerHTML = jsObject.wind.speed;
 
