@@ -3,7 +3,6 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.0380399&l
 fetch(apiURL)
     .then(response => response.json())
     .then(jsObject => {
-        console.log(jsObject);
 
         const summary = document.querySelector('#description');
         const high = document.querySelector('#highValue');
@@ -27,13 +26,13 @@ fetch(apiURL)
 
         if (t <= 50 && s >= 3) {
             windChill = (35.74 + (0.6215 * t)) - (35.75 * s ** 0.16) + (0.4275 * t * s ** 0.16)
-            windChill = Math.round(windChill * multiplier) / multiplier;
+            windChill = (Math.round(windChill * multiplier) / multiplier).toString();
         } else {
             windChill = "n/a";
 
         }
 
-        wchill.innerHTML = windChill;
+        wchill.innerHTML = windChill + '&#8457';
 
 
     });
@@ -44,7 +43,6 @@ fetch(apiURL2)
     .then(response => response.json())
     .then(jsObject => {
         const forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-        console.log(forecast);
         let day = 0;
         const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
@@ -55,8 +53,7 @@ fetch(apiURL2)
 
             document.getElementById(`day${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`temp${day+1}`).textContent = Math.round(x.main.temp);
-            weatherIcon.setAttribute('srcset', isrc);
-            weatherIcon.setAttribute('src', "images/lazyPlaceholderImage.png");
+            weatherIcon.setAttribute('src', isrc);
             weatherIcon.setAttribute('alt', forecast[day].weather[0].description);
             day++;
         })
@@ -71,12 +68,9 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.log(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
         const town = towns[1];
-        console.log(town);
         let eventImages = ["images/11FHfishday.jpg","images/11FHcreek.jpg", "images/11FHlakerun.jpg", "images/11FHplanting.jpg"];
-        let placeImg = "images/lazyPlaceholderImage.png"
 
         for (let i = 0; i < town.events.length; i++) {
 
@@ -86,8 +80,7 @@ fetch(requestURL)
 
 
             p.innerHTML = town.events[i];
-            img.setAttribute('srcset', eventImages[i]);
-            img.setAttribute('src', placeImg);
+            img.setAttribute('src', eventImages[i]);
             img.setAttribute('alt', 'townImage');
 
             card.appendChild(p);

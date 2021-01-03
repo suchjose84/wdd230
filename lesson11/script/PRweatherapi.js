@@ -26,13 +26,13 @@ fetch(apiURL)
 
         if (t <= 50 && s >= 3) {
             windChill = (35.74 + (0.6215 * t)) - (35.75 * s ** 0.16) + (0.4275 * t * s ** 0.16)
-            windChill = Math.round(windChill * multiplier) / multiplier;
+            windChill = (Math.round(windChill * multiplier) / multiplier).toString();
         } else {
             windChill = "n/a";
 
         }
 
-        wchill.innerHTML = windChill;
+        wchill.innerHTML = windChill + '&#8457';
 
 
     });
@@ -53,8 +53,7 @@ fetch(apiURL2)
 
             document.getElementById(`day${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`temp${day+1}`).textContent = Math.round(x.main.temp);
-            weatherIcon.setAttribute('srcset', isrc);
-            weatherIcon.setAttribute('src', "images/lazyPlaceholderImage.png");
+            weatherIcon.setAttribute('src', isrc);
             weatherIcon.setAttribute('alt', forecast[day].weather[0].description);
             day++;
         })
@@ -72,7 +71,6 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
         const town = towns[5];
         let eventImages = ["images/11PRcreek.jpg", "images/11PRfestival.jpg", "images/11PRfreedom.jpg"];
-        let placeImg = "images/lazyPlaceholderImage.png"
         
         for (let i = 0; i < town.events.length; i++) {
 
@@ -82,10 +80,8 @@ fetch(requestURL)
 
 
             p.innerHTML = town.events[i];
-            img.setAttribute('srcset', eventImages[i]);
-            img.setAttribute('src', placeImg);
+            img.setAttribute('src', eventImages[i]);
             img.setAttribute('alt', 'townImage');
-
             card.appendChild(p);
             card.appendChild(img);
 

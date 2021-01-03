@@ -26,7 +26,7 @@ fetch(requestURL)
       yearFound.innerHTML = "Year Founded: " + towns[i].yearFounded;
       population.innerHTML = "Population: " + towns[i].currentPopulation;
       annualRain.innerHTML = "Annual Rain Fall: " + towns[i].averageRainfall;
-      img.setAttribute('srcset', townImages[i]);
+      img.setAttribute('data-src', townImages[i]);
       img.setAttribute('src', placeImg);
       img.setAttribute('alt', 'townImage');
       div.setAttribute('class', '.cardData');
