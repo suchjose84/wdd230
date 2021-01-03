@@ -249,7 +249,7 @@ form label.sbs {
 
 }
 
-form label.flexy div{
+form label.flexy article{
     display: flex;
     border: 1px solid black;
     margin: 0;
