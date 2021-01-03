@@ -8,7 +8,6 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const towns = jsonObject['towns']
     let townImages = ["images/9springfield.jpg", "images/9fishHaven.jpg", "images/9franklin.jpg", "images/9greenville.jpg", "images/9placerton.jpg", "images/9preston.jpg", "images/9sodaSprings.jpg"];
-    let placeImg = "images/lazyPlaceholderImage.png"
     for (let i = 0; i < towns.length; i++) {
       
       let card = document.createElement('article');
@@ -26,8 +25,7 @@ fetch(requestURL)
       yearFound.innerHTML = "Year Founded: " + towns[i].yearFounded;
       population.innerHTML = "Population: " + towns[i].currentPopulation;
       annualRain.innerHTML = "Annual Rain Fall: " + towns[i].averageRainfall;
-      img.setAttribute('data-src', townImages[i]);
-      img.setAttribute('src', placeImg);
+      img.setAttribute('src', townImages[i]);
       img.setAttribute('alt', 'townImage');
       div.setAttribute('class', '.cardData');
 
