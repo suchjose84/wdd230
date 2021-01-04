@@ -190,13 +190,14 @@ main h4{
 
 }
 main p{
-    text-align: center;
+    text-align: left;
+    margin: 0;
+    margin-top: 1rem;
 }
 
 form fieldset{
     margin: 2rem auto;
     border: 1px solid #999;
-    
     border-radius: 10px;
     padding: .5rem 2%;
     max-width: 98%;
@@ -217,14 +218,14 @@ form .inputContainer{
     max-width: 20rem;
 }
 
-form label.top, form div, form label.flexy {
+form label.top, form div{
     display: block;
     padding-top: 1rem;
     color: #9c2c13;
     font-size: .8rem;
 }
 
-form label.top input, form label.top select, form label.flexy input{
+form label.top input, form label.top select{
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -248,11 +249,8 @@ form label.sbs {
     color: #555;
 
 }
-
-form label.flexy article{
-    display: flex;
-    border: 1px solid black;
-    margin: 0;
+form label.flexy{
+    display: block;
     padding: 0;
     border: solid 1px #999;
     border-radius: 4px;
@@ -264,19 +262,27 @@ form label.flexy article{
 }
 
 form label.flexy input{
-    -webkit-appearance: auto;
-    max-width: 15rem;
-    margin: auto 0;
+    width: 90%;
+    padding: 0 1rem;
+}
+
+form label.flexy div{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
     
 }
 
 form label.flexy #ratingValue{
-    margin: 0 0 0 20px;
     font-size: 1.3rem;
     color: #555;
     font-weight: bold;
-    line-height: 50px;
+    
 }
+
 
 
 form input.submitBtn {
@@ -304,7 +310,6 @@ form label.top input:required:valid {
 
 form label.top textarea {
     display: block;
-    border: 1px solid black;
     margin: 0;
     padding: 0;
     border: solid 1px #999;

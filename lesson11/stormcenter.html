@@ -79,14 +79,13 @@
                     </label>
 
 
-
-                    <label class="flexy">Storm Severity
-                        <article class="rangeContainer">
+                    <p>Storm Severity</p>
+                    <label class="flexy">
+                        <div>
                             <input type="range" name="stormSeverity" id="rating" value="5" min="1" max="10" step="1"
                                 list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingValue">5</span>
-                        </article>
-
+                        </div>
                     </label>
 
                     <datalist id="tickmarks">
@@ -148,8 +147,6 @@
     <script src="script/displayBanner.js"></script>
     <script src="script/forms.js"></script>
     <script src="script/lazyload.js"></script>
-
-    <script src="script/windChill.js"></script>
 
     <!--Google Webfont-->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
