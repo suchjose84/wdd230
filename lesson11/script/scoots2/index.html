@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/home/small.css">
+    <link rel="stylesheet" href="css/home/medium.css">
+    <link rel="stylesheet" href="css/home/large.css">
+    <title>~Scoots | Home</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="index.html"><img src="images/brand-logo.png" alt="logo img"></a>
+        </div>
+        <ul>
+            <li class="logoText"><a href="index.html">~Scoots</a></li>
+            <li class="logoCatchPhrase"><a href="#">Explore the place</a></li>
+        </ul>
+
+    </header>
+
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a class="toggleMenu" href="#">&#9776; <span id="menuText">Menu</span></a></li>
+            <li class="active"><a href="stormcenter.html">Home</a></li>
+            <li><a href="preston.html">Rentals</a></li>
+            <li><a href="sodaSprings.html">Reservations</a></li>
+            <li><a href="fishHaven.html">Tours</a></li>
+            <li><a href="stormcenter.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <section class="heroBox">
+
+
+            <picture class="heroImage">
+
+                <source srcset="images/heroImage-500.jpg" media="(max-width: 500px)">
+                <source srcset="images/heroImage-800.jpg" media="(max-width: 800px)">
+                <source srcset="images/heroImage-1100.jpg" media="(min-width: 801px)">
+                <img src="images/lazyPlaceholderImage.png" alt="heroImage">
+            </picture>
+
+            <div class="heroSummary">
+                <h1>STRENGTHENING OUR PLEDGE</h1>
+                <p>Enhancing the safety of customers and employees is our top priority. We are pleased to collaborate
+                    with Clorox®, one of the most trusted brands for powerful cleaning, and extend our Complete Clean
+                    Pledge.
+                </p>
+                <a href="stormcenter.html">Reserve a vehicle now</a>
+            </div>
+
+        </section>
+
+        <section class="weatherSection">
+
+            <div class="weatherSummary">
+                <ul>
+                    <li><span id="dateTime"></span></li>
+                    <li><span id="city"></span>, <span id="country"></span></li>
+                    <li><img id="weatherImg" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic"><span
+                            id="temp"></span></li>
+                    <li>Feels like <span id="feelsLike"></span>. <span id="description"></span>. <span
+                            id="windClass"></span>.</li>
+                    <li><span id=""></span></li>
+
+                </ul>
+            </div>
+
+            <div class="forecastBox">
+                <div class="weatherCard">
+                    <p class="firstP"><span id="day1"></span></p>
+                    <img id="icon1" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
+                    <p class="secondP"><span id=temp1></span>&#8457;</p>
+                </div>
+                <div class="weatherCard">
+                    <p class="firstP"><span id="day2"></span></p>
+                    <img id="icon2" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
+                    <p class="secondP"><span id=temp2></span>&#8457;</p>
+                </div>
+                <div class="weatherCard">
+                    <p class="firstP"><span id="day3"></span></p>
+                    <img id="icon3" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
+                    <p class="secondP"><span id=temp3></span>&#8457;</p>
+                </div>
+                <div class="weatherCard">
+                    <p class="firstP"><span id="day4"></span></p>
+                    <img id="icon4" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
+                    <p class="secondP"><span id=temp4></span>&#8457;</p>
+                </div>
+                <div class="weatherCard">
+                    <p class="firstP"><span id="day5"></span></p>
+                    <img id="icon5" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
+                    <p class="secondP"><span id=temp5></span>&#8457;</p>
+                </div>
+            </div>
+
+            <div class="weatherImage">
+                <picture>
+                    <img src="images/cozumel-map.jpg" alt="">
+                </picture>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <ul>
+            <li>&#169;<span id="currentYear"></span>| Naga City, Phil | BYU - I Online Learning | <a
+                    href="home-wireframes.html" target="_blank">Blueprint</a></li>
+            <li>Last Updated: <span id="dateTime"></span></li>
+        </ul>
+    </footer>
+
+
+    <script src="script/index.js"></script>
+    <script class=responsive src="script/main.js"></script>
+    <script src="script/displayBanner.js"></script>
+    <script src="script/Cozweatherapi.js"></script>
+    <script src="script/lazyload.js"></script>
+
+
+
+    <!--Google Webfont-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Finger Paint', 'Roboto Slab', 'Open Sans', 'Cinzel', 'Poppins', 'Merriweather']
+            }
+        });
+    </script>
+
+</body>
+
+</html>
