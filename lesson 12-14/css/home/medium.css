@@ -1,0 +1,166 @@
+@media only screen and (min-width: 35em) {
+
+
+    .banner {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .banner p {
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li:nth-child(1) {
+        font-size: 2.2rem;
+    }
+
+    header ul li:nth-child(2) {
+        font-size: .9rem;
+    }
+
+    header picture {
+        max-width: 100px;
+
+    }
+
+    .navigation {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    /*Main */
+    main section {
+        margin-bottom: 1rem;
+    }
+
+    /*Weather Summary and Forecast Section */
+
+    .weatherSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+    }
+    .weatherBox {
+        width: 100%;
+        
+    }
+
+    .weatherImage {
+        width: 100%;
+    }
+
+    .weatherSummary p:nth-child(2) {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .weatherSummary p:nth-child(3) {
+        text-align: left;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .weatherSummary p:nth-child(4) {
+        text-align: left;
+    }
+
+    .weatherSummary p:nth-child(5) {
+        text-align: left;
+    }
+
+    .forecastBox h4 {
+        text-align: left;
+    }
+
+    .forecastBox table {
+        margin: 0;
+    }
+
+    /* Article Section */
+
+    main .articleBox {
+        width: 80%;
+    }
+
+    main .articleBox h3 {
+        margin-top: 0px;
+    }
+
+    .articleBox img {
+        float: right;
+        max-width: 230px;
+    }
+
+    /*Rental Section */
+
+    main .rentalBox {
+        width: 80%;
+    }
+
+
+    main .rentalBox .card article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .5rem;
+
+    }
+
+    article:nth-child(odd) img {
+        grid-column: 1;
+        grid-row: 1
+    }
+
+    article:nth-child(odd) .cardData {
+        grid-column: 2;
+        grid-row: 1;
+
+    }
+
+    /* Map Section */
+
+    .locationSection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 74%;
+        margin: 0 auto;
+    }
+
+    .locationSection .mapBox {
+        grid-column: 1 / 2;
+    }
+
+    .locationSection .addressBox {
+        grid-column: 2 / 3;
+    }
+
+
+    .locationSection .mapBox img {
+        display: block;
+        margin: auto;
+        width: 80%;
+        border: 1px solid rgb(51, 51, 51, .5);
+    }
+
+
+    /*end medium*/
+
+}
+    

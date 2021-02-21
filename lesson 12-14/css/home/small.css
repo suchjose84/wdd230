@@ -1,0 +1,518 @@
+/***************************************************************
+
+FONTS
+font-family: 'Cinzel', serif;
+font-family: 'Finger Paint', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Acme', sans-serif;
+font-family: 'Lexend Mega', sans-serif;
+*/
+
+/*
+COLORS
+Primary - #77A6F7 - rgb(119, 166, 247) - Sky Blue - background
+Primary - #FFFFFF - rgb(255,255,255) - white - background
+Primary - #333333 - rgb(51,51,51) - lighter black - paragraph font color
+Secondary - #00887A - rgb(0, 136, 122) - green - nav color
+Secondary - #FFCCBC - rgb(189, 183, 107) - nav color
+Secondary - #666600 - rgb(255,255,0) - yellow - for footer contrast
+
+********************************************************************/
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 1);
+    /*background-color: #F5F5DC; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Banner CSS */
+
+.banner {
+    background-color: rgba(255, 255, 0, .5);
+    display: none;
+    font-size: .8rem;
+    padding: 3px;
+}
+
+.banner p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*Header CSS */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(119, 166, 247);
+    padding: .5rem;
+}
+
+header div {
+    max-width: 80px;
+}
+
+header img {
+    max-width: 80%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: #333333;
+    
+}
+
+header ul li:nth-child(1) {
+    font-family: 'Lexend Mega', sans-serif;
+    font-size: 1.6rem;
+    
+}
+
+header ul li:nth-child(2) {
+    font-size: .8rem;
+}
+
+header ul li:nth-child(2) a {
+    color: white;
+}
+
+
+/*Navigation CSS */
+
+nav {
+    background-color: #00887A;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: .8rem;
+    font-weight: 600;
+
+}
+
+#menuText {
+    font-size: 1rem;
+
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #333333;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: 400;
+
+}
+
+
+/*Main Page CSS */
+
+
+main {
+    color: #333333;
+}
+main section {
+    margin-bottom: .2rem;
+}
+
+main h2,
+h3,
+h1 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    
+}
+
+/*Hero Pic and Summary Section */
+
+main .heroBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    background-color: rgb(211, 227, 252);
+}
+main .heroImage img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+main .heroSummary {
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    margin: auto 0;
+}
+
+main .heroSummary h2,
+p,
+a {
+    text-align: left;
+}
+main .heroSummary h2 {
+    margin: 0;
+}
+
+main .heroSummary a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    padding: .5rem;
+    background-color: rgb(119, 166, 247);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+main .heroSummary a:hover {
+    background-color: rgba(119, 166, 247, .7);
+}
+
+main .heroSummary p {
+    margin-bottom: 30px;
+}
+
+/*Weather Summary and Forecast Section */
+
+.weatherSection {
+    background-color: rgb(255, 204, 188);
+    border: 1px solid rgba(0, 0, 0, .2);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(0, 0, 0, .8);
+    padding: 1rem 2% 1rem 2%;
+
+}
+.weatherSection .weatherBox{
+    display: block;
+}
+
+.weatherSummary {
+    margin-bottom: 1.5rem;
+}
+
+.weatherSummary p{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.weatherSummary p:nth-child(1) {
+    color: rgb(0, 136, 122);
+    font-size: .9rem;
+    font-weight: 650;
+    margin: 1.5 0 1rem 0;
+}
+
+.weatherSummary p:nth-child(2) {
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 1.5rem;
+
+}
+
+.weatherSummary p:nth-child(3) {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 1rem 0 .8rem 0
+}
+
+.weatherSummary p:nth-child(3) img{
+    height: 2.5rem;
+}
+
+.weatherSummary p:nth-child(4) {
+    font-size: .9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.weatherSummary p:nth-child(5) {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.forecastBox {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+
+.forecastBox table {
+    margin: 0 auto;
+}
+
+.forecastBox .forecastTable tr{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+}
+
+#icon1, #icon2, #icon3 {
+    max-height: 1.6rem;
+}
+
+.forecastBox h4{
+    text-align: center;
+    margin: 0;
+}
+
+.forecastBox .forecastTable tr:nth-child(4){
+    display: none;
+}
+
+.forecastBox .forecastTable tr:nth-child(5){
+    display: none;
+}
+
+.weatherImage{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.weatherImage img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    opacity: .8;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*Article Section */
+
+main .articleBox {
+    width: 90%;
+    display: block;
+    background-color: rgba(0, 136, 122, .2);
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 2%;
+    
+}
+
+.articleBox img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+main .articleBox h2 {
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+.hasDropCap:first-letter {
+    font-size: 2.5rem;
+    float: left;
+    margin: 0.21em 0.22em 0.1em 0;
+    line-height: .65em;
+    font-family: 'Merriweather', serif;
+
+}
+
+.hasDropCap p {
+    text-align: left;
+
+}
+
+main .author {
+    font-size: .8rem;
+    font-style: italic;
+    
+}
+
+main .hasDropCap a{
+    color: blue;
+}
+main .hasDropCap a:hover{
+    color: green;
+}
+
+/* Rental Box */
+
+main .rentalBox{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 136, 122, .2);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2% 1.5rem 2%;
+
+}
+
+main .rentalBox .card article{
+    display: block;
+    width: 85%;
+    background-color: rgba(255, 204, 188, .5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: .5rem auto;
+    border-radius: 3px;
+    padding: 1rem;
+    
+
+}
+
+main .rentalBox .card h3{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+main .rentalBox .card h5{
+    text-align: center;
+    color: rgba(72, 61, 139);
+    font-family: 'Finger Paint', cursive;
+}
+
+main .rentalBox .card p{
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+    margin: auto;
+    
+}
+
+main .rentalBox .card img{
+    display: block;
+    width: 95%;
+    margin: 1rem auto auto auto;
+    box-shadow: 0 0 10px;
+    border-style: inset;
+}
+
+
+
+/* Address Section */
+
+.locationSection {
+    background-color: rgb(211, 227, 252);
+    border:rgba(0, 0, 0, 0.2) 1px solid;
+    width: 84%;
+    margin: 0 auto;
+    padding: 1rem 5%;
+    
+}
+
+.locationSection .mapBox img {
+    display: none;
+}
+
+.locationSection .addressBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.locationSection .addressBox h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.locationSection .addressBox p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.locationSection .addressBox img {
+    max-height: 1.1rem;
+}
+
+.locationSection .addressbox picture img {
+    max-width: 1.5rem;
+
+}
+
+.locationSection .address {
+    display: block;
+    margin: auto;
+
+}
+footer {
+    width: 100%;
+    background-color: #77A6F7;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+footer ul li {
+    padding: 5px;
+}
+
+footer ul li:nth-child(2) {
+    color: yellow;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

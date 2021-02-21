@@ -1,0 +1,75 @@
+{
+  "vehicles": [{
+    "name": "Honda Metro Scooter",
+    "capacity": "1",
+    "reservation": {
+      "halfday": "$20",
+      "fullday": "$30"
+    },
+    "walkin": {
+      "halfday": "$25",
+      "fullday": "$35"
+    },
+    "imageurl": "images/honda-metro.jpg"
+  }, {
+    "name": "Honda Dio Scooter",
+    "capacity": "2",
+    "reservation": {
+      "halfday": "$30",
+      "fullday": "$40"
+    },
+    "walkin": {
+      "halfday": "$35",
+      "fullday": "$45"
+    },
+    "imageurl": "images/honda-dio.jpg"
+  }, {
+    "name": "Honda PCX150 Scooter",
+    "capacity": "2",
+    "reservation": {
+      "halfday": "$40",
+      "fullday": "$50"
+    },
+    "walkin": {
+      "halfday": "$45",
+      "fullday": "$55"
+    },
+    "imageurl": "images/honda-pcx150.jpg"
+  }, {
+    "name": "Honda Pioneer ATV",
+    "capacity": "4",
+    "reservation": {
+      "halfday": "$50",
+      "fullday": "$70"
+    },
+    "walkin": {
+      "halfday": "$60",
+      "fullday": "$80"
+    },
+    "imageurl": "images/honda-atv.jpg"
+  }, {
+    "name": "Jeep Wrangler (2-door)",
+    "capacity": "4",
+    "reservation": {
+      "halfday": "$60",
+      "fullday": "$85"
+    },
+    "walkin": {
+      "halfday": "$70",
+      "fullday": "$90"
+    },
+    "imageurl": "images/jeep-wrangler2door.jpg"
+  }, {
+    "name": "Jeep Wrangler (4door w/ AC)",
+    "capacity": "4",
+    "reservation": {
+      "halfday": "$60",
+      "fullday": "$85"
+    },
+    "walkin": {
+      "halfday": "$70",
+      "fullday": "$90"
+    },
+    "imageurl": "images/jeep-wrangler4door.jpg"
+  }]
+}
