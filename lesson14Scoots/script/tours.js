@@ -6,64 +6,91 @@ fetch(requestURL3)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const vehicles = jsonObject['vehicles']
-    for (let i = 0; i < vehicles.length; i++) {
+    const tours = jsonObject['tours']
+    for (let i = 0; i < tours.length; i++) {
       
-      let card = document.createElement('article');
-      let cardBox = document.createElement('div');
-      let name = document.createElement('h4');
-      let capacity = document.createElement('p');
-      let divPriceBox = document.createElement('div');
-      let divReservation = document.createElement('div');
-      let reservation = document.createElement('p');
-      let resHalf = document.createElement('p');
-      let resFull = document.createElement('p');
-      let divWalkIn = document.createElement('div');
-      let walkIn = document.createElement('p');
-      let walkHalf = document.createElement('p');
-      let walkFull = document.createElement('p');
-      let button = document.createElement('p');
+      let cardBox = document.createElement('article');
+      let card = document.createElement('div');
+      let divPicSummary = document.createElement('div');
       let img = document.createElement('img');
+      let divSummary = document.createElement('div');
+      let name = document.createElement('h4');
+      let span = document.createElement('span');
+      let price = document.createElement('p');
+      let description = document.createElement('p');
+      let divTimeDuration = document.createElement('div');
+      let timeImg = document.createElement('img');
+      let duration = document.createElement('p');
+      let divCheckCancel = document.createElement('div');
+      let checkImg = document.createElement('img');
+      let cancel = document.createElement('p');
+      let divCheckSafety = document.createElement('div');
+      let checkImg2 = document.createElement('img');
+      let safety = document.createElement('p');
 
 
-      img.setAttribute('src', vehicles[i].imageurl);
-      img.setAttribute('alt', 'vehicleImage');
       cardBox.setAttribute('class', 'cardBox');
-      name.innerHTML = vehicles[i].name;
-      capacity.innerHTML = "Capacity: " + vehicles[i].capacity;
-      capacity.setAttribute('class', 'capacity');
-      divPriceBox.setAttribute('class', 'divPriceBox');
-      divReservation.setAttribute('class', "divReservation");
-      reservation.innerHTML = "Reservation";
-      resHalf.innerHTML = "half-day: " + vehicles[i].reservation.halfday;
-      resFull.innerHTML = "whole-day: " + vehicles[i].reservation.fullday;
-      divWalkIn.setAttribute('class', "divWalkIn");
-      walkIn.innerHTML = "Walk-In";
-      walkHalf.innerHTML = "half-day: " + vehicles[i].walkin.halfday;
-      walkFull.innerHTML = "half-day: " + vehicles[i].walkin.fullday;
-      button.innerHTML = "check availability";
-      button.setAttribute('class', 'buttonCheck');
+      
+      card.setAttribute('class', 'card');
+      
+      divPicSummary.setAttribute('class', 'divPicSummary');
+      img.setAttribute('src', tours[i].imageurl);
+      img.setAttribute('alt', 'tourImage');
+      
+      
+      divSummary.setAttribute('class', 'divSummary');
+      span.setAttribute('id', 'price');
+      span.innerHTML = tours[i].price;
+      price.setAttribute('class', 'priceBox');
+      price.innerHTML = "from "; 
+      name.innerHTML = tours[i].name;
+      description.innerHTML = tours[i].description;
+      description.setAttribute('class', 'description');
+
+      divTimeDuration.setAttribute('class', 'divInline');
+      timeImg.setAttribute('src', 'images/time.png');
+      timeImg.setAttribute('alt', 'timeImage');
+      timeImg.setAttribute('id', 'iconTime');
+      duration.innerHTML = tours[i].duration;
+
+      divCheckCancel.setAttribute('class', 'divInline');
+      checkImg.setAttribute('src', 'images/checked.png');
+      checkImg.setAttribute('alt', 'checkImage');
+      checkImg.setAttribute('class', 'iconCheck');
+      cancel.innerHTML = tours[i].cancel;
+
+      divCheckSafety.setAttribute('class', 'divInline');
+      checkImg2.setAttribute('src', 'images/checked.png');
+      checkImg2.setAttribute('alt', 'checkImage');
+      checkImg2.setAttribute('class', 'iconCheck');
+      safety.innerHTML = tours[i].safety;
       
 
 
-      card.appendChild(cardBox);
-      cardBox.appendChild(img);
-      cardBox.appendChild(name);
-      cardBox.appendChild(capacity);
-      cardBox.appendChild(divPriceBox);
-      divPriceBox.appendChild(divReservation);
-      divReservation.appendChild(reservation);
-      divReservation.appendChild(resHalf);
-      divReservation.appendChild(resFull);
-      divPriceBox.appendChild(divWalkIn);
-      divWalkIn.appendChild(walkIn);
-      divWalkIn.appendChild(walkHalf);
-      divWalkIn.appendChild(walkFull);
-      cardBox.appendChild(button);
+      cardBox.appendChild(card);
+      card.appendChild(divPicSummary);
+      divPicSummary.appendChild(img);
       
+      divPicSummary.appendChild(divSummary);
+      divSummary.appendChild(price);
+      divSummary.appendChild(name);
+      price.appendChild(span);
+      divSummary.appendChild(description);
+      
+      divSummary.appendChild(divTimeDuration);
+      divTimeDuration.appendChild(timeImg);
+      divTimeDuration.appendChild(duration);
+      
+      divSummary.appendChild(divCheckCancel);
+      divCheckCancel.appendChild(checkImg);
+      divCheckCancel.appendChild(cancel);
+      
+      divSummary.appendChild(divCheckSafety);
+      divCheckSafety.appendChild(checkImg2);
+      divCheckSafety.appendChild(safety);
       
 
-      document.querySelector('.card').appendChild(card);
+      document.querySelector('.tourBox').appendChild(cardBox);
 
     }
 });

@@ -1,0 +1,75 @@
+@media only screen and (min-width: 35em) {
+
+
+    .banner {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .banner p {
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li:nth-child(1) {
+        font-size: 2.2rem;
+    }
+
+    header ul li:nth-child(2) {
+        font-size: .9rem;
+    }
+
+    header picture {
+        max-width: 100px;
+
+    }
+
+    .navigation {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    /*Main */
+
+    main .tourBox .cardBox .card .divPicSummary .divSummary h4{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    main .tourBox .cardBox .card .divPicSummary .divSummary p{
+        font-size: 1rem;
+        
+    }
+
+    main .tourBox .cardBox .card .divPicSummary .divSummary .divInline {
+        margin-bottom: .5rem;
+    }
+
+    main .tourBox .cardBox .card .divPicSummary .divSummary .divInline p {
+        font-size: 1rem;
+    
+    }
+
+
+    /*end medium*/
+
+}
+    

@@ -1,19 +1,108 @@
 {
   "tours": [{
     "name": "E-bike West Coast and Snorkeling Tour",
-    "price": "from $58.00",
+    "price": "$58.00",
     "duration": "4 hours",
-    "imageurl": "images/activities/bike-tour.jpg"
+    "imageurl": "images/activities/bike-tour.jpg",
+    "cancel": "Free cancellation",
+    "description": "Combine two of Cozumel's most popular outdoor activities—snorkeling and cycling—on a single half-day tour. A guide will provide all instruction and supervision as you explore the island's underground river system, a botanical Mayan garden, and the teeming coral barrier reef. Riding an electric bike allows you to pedal as much or as little as you like with the assistance of an electric motor.",
+    "safety": "Taking safety measures"
+  }, {
+    "name": "Cozumel Shore Excursion: Mini-SUB Diving Adventure",
+    "price": "$78.00",
+    "duration": "1 hour",
+    "imageurl": "images/activities/mini-sub.jpg",
+    "cancel": "Free cancellation",
+    "description": "Discover Cozumel’s magnificent marine life from the comfort of a personalized mini-SUB during this shore excursion. Gaze at troves of tropical fish and colorful coral reefs as you navigate the Caribbean Sea in your futuristic machine, gazing at the captivating creatures your guide directs your attention to. Absolutely no diving experience is necessary to partake in this adventurous shore excursion.",
+    "safety": "Taking safety measures"
   }, {
     "name": "Cozumel Self-Drive Buggy Tour, Snorkeling & Lunch",
-    "price": "from $77.55",
+    "price": "$77.55",
     "duration": "4.5 hours",
-    "imageurl": "images/activities/buggy-tour.jpg"
+    "imageurl": "images/activities/buggy-tour.jpg",
+    "cancel": "Free cancellation",
+    "description": "Check out Cozumel sights from the seat of a rugged buggy that easily handles the terrain's twists and turns. Head to the El Cedral ruins for a chance to learn about the area's strong Maya heritage, and then zoom to the waterfront to snorkel in Arrecifes de Cozumel National Park and SkyReef. Stop in between to chow down on an included Mexican-style lunch.",
+    "safety": "Taking safety measures"
   }, {
     "name": "Exclusive Catamaran Sail & Snorkel",
-    "price": "from $89.99",
+    "price": "$89.99",
     "duration": "4 hours",
-    "imageurl": "images/activities/catamaran-sail.jpg"
+    "imageurl": "images/activities/catamaran-sail.jpg",
+    "cancel": "Free cancellation",
+    "description": "Treat yourself to a fabulous on-the-water experience from Cozumel. This catamaran sailing and snorkeling cruise gives you the chance to explore the marine life of Mexico, admire the scenery, and enjoy on-board service that includes Champagne, fresh fruit, lunch, and unlimited drinks and cocktails. You can snorkel over a protected reef and then relax in the boat's air-conditioned cabin or on the deck. Plus, stop at a beach to play in the water.",
+    "safety": "Taking safety measures"
+  }, {
+    "name": "Chankanaab Park Cozumel All inclusive Ultimate package",
+    "price": "$38.50",
+    "duration": "3-4 hours",
+    "imageurl": "images/activities/chakanaab-park.jpg",
+    "cancel": "Free cancellation",
+    "description": "Discover the white-sand beaches, magnificent reef, and amusement-park-style attractions of Chankanaab Beach Adventure Park on a tour that includes snorkeling and lunch. The tropical wonderland offers nature walks, crocodile exhibits, and sea lion shows, giving nature lovers and families a chance to get to see wildlife up close. Plus, a sandy beach and playground make the park perfect of children—many other beaches in Cozumel are not kid-friendly.",
+    "safety": "Taking safety measures"
+  }, {
+    "name": "Del Mar Latino Beach Club Cozumel All inclusive Day Pass",
+    "price": "$39.00",
+    "duration": "8 hours",
+    "imageurl": "images/activities/delmar-latino.jpg",
+    "cancel": "Free cancellation",
+    "description": "Leave behind Cozumel’s crowded public beaches and snag an all-inclusive day pass to the exclusive Del Mar Latino Beach Club. Conveniently located within walking distance of the main piers, this beach club is complete with white sand, lounge chairs, and an open bar—and you don’t even have to hire a taxi to get there. Plus, a 50 person maximum capacity makes this spot an ideal tranquil escape.",
+    "safety": "Taking safety measures"
+  }, {
+    "name": "Cozumel Food Tour",
+    "price": "$82.00",
+    "duration": "3 hours",
+    "imageurl": "images/activities/food-tour.jpg",
+    "cancel": "Free cancellation",
+    "description": "Pleasure your palate with meat-stuffed empanadas, succulent shrimp tacos, and sweet Mexican pastries on a culinary tour of Cozumel. Sample the exotic flavors of the idyllic island, noting the Mexican spice and Caribbean flair of the dishes due to Cozumel’s close proximity to Cuba. Immerse yourself in the culinary customs of the area as a knowledgeable guide takes you to five favorite local haunts to same fine Yucatan bites and beverages. Enjoy personalized attention and round-trip transportation on this intimate small group tour.",
+    "safety": "Taking safety measures"
+  }, {
+    "name": "Cozumel Beach Horse Riding Tour",
+    "price": "$35.00",
+    "duration": "30 minutes",
+    "imageurl": "images/activities/horse-riding.jpg",
+    "cancel": "Free cancellation",
+    "description": "Saddle up for a 30-minute adventure by horseback at Mr Sancho’s beach. Get paired with a horse matching your skill level and follow a guide into the jungle, past mangrove forests and farms, before you reach the stunning shoreline of Cozumel’s white-sand beaches and sparkling blue waters. This family-friendly outing is suitable for riders of all levels.",
+    "safety": "Taking safety measures"
+  }, {
+    "name": "Mayan Jungle Jeep to Jade Cavern Cenote and Snorkel Adventure",
+    "price": "$74.00",
+    "duration": "5 hours",
+    "imageurl": "images/activities/jeep-adventure.jpg",
+    "cancel": "Free cancellation",
+    "description": "Feel the breeze as you zip around Cozumel aboard a Jeep on this 5-hour tour. After receiving instructions from an informative guide, drive a jeep to Jade Cavern and other top island attractions. Follow this with snorkeling in beautiful clear waters and a satisfying lunch. Wrap up the day with a tour of an esteemed tequila factory, complete with tastings. Choose from several departure times to suit your schedule.",
+    "safety": "Taking safety measures"
+  }, {
+    "name": "Thriller Jet Boat Adventure",
+    "price": "$50.00",
+    "duration": "1 hour",
+    "imageurl": "images/activities/jet-boat.jpg",
+    "cancel": "Free cancellation",
+    "description": "Prepare to get wet and wild on this thrilling adventure. Board a 500 horsepower jet boat that seats up to 12 passengers. After a short safety briefing, head out onto the waters off Cozumel for an exhilarating ride. Hold on tight as the captain guns the motor, creating a curtain of white wake behind you.",
+    "safety": "Taking safety measures"
+  }, {
+    "name": "Chankanaab Park Cozumel Scuba Diving",
+    "price": "$55.00",
+    "duration": "2 hours",
+    "imageurl": "images/activities/scuba-diving.jpg",
+    "cancel": "Free cancellation",
+    "description": "Experience Chankanaab Marine Park's underwater world with this discover scuba diving introductory dive, including one air tank. You will be able to see the marine life firsthand, as well as ancient caves and underwater sculptures. Once your dive is over, enjoy access to the Chankanaab Marine Park and its amenities where you can relax and stay as long as you like.",
+    "safety": "Taking safety measures"
+  }, {
+    "name": "Off-Road Mayan Adventure in Cozumel with Snorkeling and Lunch",
+    "price": "$85.00",
+    "duration": "4 hours",
+    "imageurl": "images/activities/off-road.jpg",
+    "cancel": "Free cancellation",
+    "description": "Discover the Maya ruins of San Gervasio Park and blaze along Cozumel’s off-road trails aboard a dune buggy on this 4-hour tour. In San Gervasio, walk through the oldest Maya city on the island, learning about its archaeological importance along the way. Then, drive or ride in a dune buggy for a thrilling, splashy adventure. Dial down the adrenaline with peaceful snorkeling along one of the world’s largest barrier reefs and enjoy lunch at an exclusive beach club.",
+    "safety": "Taking safety measures"
+  }, {
+    "name": "Tulum Mayan Ruins from Cozumel",
+    "price": "$75.00",
+    "duration": "5 hours",
+    "imageurl": "images/activities/mayan-ruins.jpg",
+    "cancel": "Free cancellation",
+    "description": "Immerse yourself in the Mayan culture of the Tulum ruins on this guided tour. Round-trip transportation, including a ferry trip, are included as well as admission; all details are taken care of for you and you just need to enjoy the experience. After the tour of the ruins with a certified federal guide, spend time enjoying the beach and the waves.",
+    "safety": "Taking safety measures"
   }
 
 ]
