@@ -30,9 +30,9 @@
     <nav class="clearfix">
         <ul class="navigation">
             <li><a class="toggleMenu" href="#">&#9776; <span id="menuText">Menu</span></a></li>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
             <li><a href="tours.html">Tours</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -42,37 +42,38 @@
     <main>
 
         <h2>Tell Us About Your Trip</h2>
-        <h4>Search for a vehicle</h4>
+        <h4>Search Your Vehicle</h4>
 
-        <form method="get" action="stormresponse.html">
+        <form method="get" action="reserveResponse.html">
 
-            <fieldset>
+            <fieldset class="whereField">
                 <legend>Where?</legend>
                 <div class="inputContainer">
+                    <div class="pickUpBox">
+                        <label class="top">Pick-up Location* <input type="text" name="pickUpLocation" required
+                                pattern="[a-zA-Z\s]{2,}" placeholder="Hotel, Airport, Pier or Address">
+                        </label>
 
-                    <label class="top">Pick-up Location* <input type="text" name="pickUpLocation" required
-                            pattern="[a-zA-Z\s]{4,}" placeholder="Hotel, Airport, Pier or Address">
-                    </label>
-
-                    <label class="sbs"><input type="checkbox" name="returnCheckBox" value="returnCheckBox">
-                        Return to same location
-                        </input>
-                    </label>
+                        <label class="sbs"><input type="checkbox" name="returnCheckBox" value="returnCheckBox">
+                            Return to same location
+                            </input>
+                        </label>
+                    </div>
 
                     <label class="top">Return Location* <input type="text" name="returnLocation" required
-                            pattern="[a-zA-Z\s]{4,}" placeholder="Hotel, Airport, Pier or Address">
+                            pattern="[a-zA-Z\s]{2,}" placeholder="Hotel, Airport, Pier or Address">
                     </label>
 
                 </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="whenField">
 
                 <legend>When?</legend>
                 <div class="inputContainer">
                     <div class="inputInline">
                         <label class="top">Pick-up Date* <input type="date" name="pickUpDate" required></label>
-                        <label class="top">Pick-up Time*
+                        <label class="top">Time*
                             <select name="timeValue" value="Noon">
                                 <option value="timeValue">Midnight</option>
                                 <option value="timeValue">00:30</option>
@@ -129,7 +130,7 @@
                     <div class="inputInline">
 
                         <label class="top">Drop-off Date* <input type="date" name="dropOffDate" required></label>
-                        <label class="top">Drop-off Time*
+                        <label class="top">Time*
                             <select name="timeValue" value="Noon" required>
                                 <option value="timeValue">Midnight</option>
                                 <option value="timeValue">00:30</option>
@@ -185,7 +186,7 @@
                     </div>
 
                     <label class="top">Renter's Age*
-                        <select name="age" value="age" required>
+                        <select class="ageSelect" name="age" value="age" required>
                             <option value="age">18</option>
                             <option value="age">19</option>
                             <option value="age">20</option>
@@ -203,61 +204,62 @@
             </fieldset>
 
 
-            <fieldset>
-                <legend>Your Vehicle and Personal Information</legend>
-
-                <label class="top">
-                    <select name="age" value="age" required>
-                        <option value="">Select vehicle</option>
-                        <option value="honda-metro">Honda-Metro Scooter (Max Person 1) - </option>
-                        <option value="honda-metro">Honda-Dio Scooter (Max Person 2)</option>
-                        <option value="honda-metro">Honda-PCX150 Scooter (Max Person 2)</option>
-                        <option value="honda-metro">Honda-Pioneer ATV (Max Person 4)</option>
-                        <option value="honda-metro">Jeep Wrangler-2 door (Max Person 4)</option>
-                        <option value="honda-metro">Jeep Wranger-4 door w/ac (Max Person 5)</option>
-                    </select>
-                </label>
-                <div class="inputInline">
-
-                    <label class="sbs"><input type="radio" name="rentTime" value="half"> half-day(3hours)</label>
-                    <label class="sbs"><input type="radio" name="rentTime" value="whole"> whole-day</label>
-
-                </div>
-
+            <fieldset class=infoField>
+                <legend>Vehicle and Personal Information</legend>
                 <div class="inputContainer">
-                    <label class="top">First Name* <input type="text" name="firstname" required
-                            pattern="[a-zA-Z\s]{5,}">
+                    <label class="top">
+                        <select name="vehicle" value="vehicle" required>
+                            <option value="">Select vehicle*</option>
+                            <option value="honda-metro">Honda-Metro Scooter (Max Person 1) - </option>
+                            <option value="honda-metro">Honda-Dio Scooter (Max Person 2)</option>
+                            <option value="honda-metro">Honda-PCX150 Scooter (Max Person 2)</option>
+                            <option value="honda-metro">Honda-Pioneer ATV (Max Person 4)</option>
+                            <option value="honda-metro">Jeep Wrangler-2 door (Max Person 4)</option>
+                            <option value="honda-metro">Jeep Wranger-4 door w/ac (Max Person 5)</option>
+                        </select>
                     </label>
-                    <label class="top">Last Name* <input type="text" name="lastname" required
-                            pattern="[a-zA-Z\s]{5,}"></label>
-                    <label class="top">Email*(to send you a confirmation) <input type="email" name="email"
-                            placeholder="someone@mail.com"></label>
+                    <div class="radioInline">
+
+                        <label class="sbs"><input type="radio" name="rentTime" value="half" required> half-day(3hours)</label>
+                        <label class="sbs"><input type="radio" name="rentTime" value="whole" required> whole-day</label>
+
+                    </div>
+
+                    <div class="divPersonalInfo">
+                        <label class="top">First Name* <input type="text" name="firstname" required
+                                pattern="[a-zA-Z\s]{2,}">
+                        </label>
+                        <label class="top">Last Name* <input type="text" name="lastname" required
+                                pattern="[a-zA-Z\s]{2,}"></label>
+                        <label class="top">Email* (to send you confirmation) <input type="email" name="email"
+                                placeholder="someone@mail.com"></label>
+                    </div>
                 </div>
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="addInfoField">
                 <legend>Additional Information and Services</legend>
-                <ul>
-                    <li>A $50 security deposit is required to confirm reservations.</li>
-                    <li>A valid drivers license is required in hand at time of rental.</li>
-                    <li>No one under 12 years of age are allowed to ride on the scooters.</li>
-                    <li>Fuel charge not included.</li>
-                    <li>Unlimited mileage.</li>
-                    <li>Liability insurance is free of charge.</li>
-                    <li>Reservations rate requires 24 hour prior notification.</li>
-                    <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
-                    <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
-                    <li>Rentals may be returned to either location.</li>
+                <ul class="listBox">
+                    <li>&#9702; A $50 security deposit is required to confirm reservations.</li>
+                    <li>&#9702; A valid drivers license is required in hand at time of rental.</li>
+                    <li>&#9702; No one under 12 years of age are allowed to ride on the scooters.</li>
+                    <li>&#9702; Fuel charge not included.</li>
+                    <li>&#9702; Unlimited mileage.</li>
+                    <li>&#9702; Liability insurance is free of charge.</li>
+                    <li>&#9702; Reservations rate requires 24 hour prior notification.</li>
+                    <li>&#9702; Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                    <li>&#9702; Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                    <li>&#9702; Rentals may be returned to either location.</li>
 
                 </ul>
             </fieldset>
 
-
-            <p>By clicking submit, you agree to the terms and conditions. Please consult our <a
-                    href="https://google.com">Privacy Policy</a> to find out more.</p>
-            <input type="submit" value="Submit Report" class="submitBtn">
-
+            <fieldset class=buttonField>
+                <p>By clicking submit, you agree to the terms and conditions. Please consult our <a
+                        href="https://google.com">Privacy Policy</a> to find out more.</p>
+                <input type="submit" value="Submit Report" class="submitBtn">
+            </fieldset>
 
         </form>
 

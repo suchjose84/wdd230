@@ -162,99 +162,14 @@ nav ul li a:hover {
 
 }
 
-
-/*Main Page CSS */
-
-main {  
-    min-height: 20rem;
+main {
+    height: 100%;
+    margin-bottom: 400px;
 }
 
-main h2 {
-
-    font-family: 'Roboto Slab', serif;
-    margin-bottom: 0;
+main h1, p{
     text-align: center;
-    color: rgb(51, 51, 51);
-
-
-}
-
-main h4 {
-    margin: 0;
-    text-align: center;
-
-    font-family: 'Poppins', sans-serif;
-
-}
-
-main p {
-    text-align: left;
-    margin: 0;
-    margin-top: 1rem;
-    font-size: small;
-}
-
-form fieldset {
-    margin: 2rem auto;
-    border: 1px solid #999;
-    border-radius: 10px;
-    width: 90%;
-    background-color: #d3E3fc;
-    padding-top: 1.5rem;
-}
-
-form legend {
-    color: #445ba9;
-    font-family: 'Poppins', sans-serif;
-    font-size: large;
-}
-
-form .inputContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
     
-}
-
-form label.top,
-form div {
-    display: block;
-    color: rgba(0, 0, 0, 0.9);
-    font-size: .8rem;
-    width: 100%;
-}
-
-form label.top input, form label.top select {
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    color: #555;
-    font-family: 'Poppins', sans-serif;
-    height: 2.5rem;
-    margin-top: 3px;
-    padding-left: .5rem;
-}
-
-form label.top select {
-    width: 100%;
-}
-form label.top input {
-    width: 100%;
-    
-}
-
-form label.sbs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: .75rem 0;
-    color: #555;
-}
-form label.sbs input{
-    margin-right: 5px;
 }
 
 

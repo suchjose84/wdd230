@@ -1,0 +1,20 @@
+{
+  "tours": [{
+    "name": "E-bike West Coast and Snorkeling Tour",
+    "price": "from $58.00",
+    "duration": "4 hours",
+    "imageurl": "images/activities/bike-tour.jpg"
+  }, {
+    "name": "Cozumel Self-Drive Buggy Tour, Snorkeling & Lunch",
+    "price": "from $77.55",
+    "duration": "4.5 hours",
+    "imageurl": "images/activities/buggy-tour.jpg"
+  }, {
+    "name": "Exclusive Catamaran Sail & Snorkel",
+    "price": "from $89.99",
+    "duration": "4 hours",
+    "imageurl": "images/activities/catamaran-sail.jpg"
+  }
+
+]
+}
