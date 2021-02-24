@@ -1,0 +1,305 @@
+/***************************************************************
+
+FONTS
+font-family: 'Cinzel', serif;
+font-family: 'Finger Paint', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Acme', sans-serif;
+font-family: 'Lexend Mega', sans-serif;
+*/
+
+/*
+COLORS
+Primary - #77A6F7 - rgb(119, 166, 247) - Sky Blue - background
+Primary - #FFFFFF - rgb(255,255,255) - white - background
+Primary - #333333 - rgb(51,51,51) - lighter black - paragraph font color
+Secondary - #00887A - rgb(0, 136, 122) - green - nav color
+Secondary - #FFCCBC - rgb(189, 183, 107) - creamy pink color
+Secondary - #666600 - rgb(255,255,0) - yellow - for footer contrast
+
+********************************************************************/
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 1);
+    /*background-color: #F5F5DC; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Banner CSS */
+
+.banner {
+    background-color: rgba(255, 255, 0, .5);
+    display: none;
+    font-size: .8rem;
+    padding: 3px;
+}
+
+.banner p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*Header CSS */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(119, 166, 247);
+    padding: .5rem;
+}
+
+header div {
+    max-width: 80px;
+}
+
+header img {
+    max-width: 80%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: #333333;
+    
+}
+
+header ul li:nth-child(1) {
+    font-family: 'Lexend Mega', sans-serif;
+    font-size: 1.6rem;
+    
+}
+
+header ul li:nth-child(2) {
+    font-size: .8rem;
+}
+
+header ul li:nth-child(2) a {
+    color: white;
+}
+
+
+/*Navigation CSS */
+
+nav {
+    background-color: #00887A;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: .8rem;
+    font-weight: 600;
+
+}
+
+#menuText {
+    font-size: 1rem;
+
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #333333;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: 400;
+
+}
+
+
+/*Main Page CSS */
+
+
+main {
+    color: #333333;
+    margin-bottom: 2rem;
+}
+h2:first-child {
+    text-align: left;
+    margin-top: 0;
+    font-family: "Open-sans", sans-serif;
+}
+main .title h1 {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    margin-bottom: 0;
+}
+
+main .title p {
+    text-align: center;
+}
+
+main section {
+    margin: 0 auto;
+    margin-bottom: .2rem;
+    width: 96%;
+}
+main section .addressBox .address {
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+main section .addressBox .address iframe {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.address .branchDetails{
+    padding: .8rem;
+
+}
+.address .branchDetails h4, p {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.address .branchDetails p:last-child {
+    margin-bottom: 0
+}
+
+.address .branchDetails img {
+    width: 1.5rem;
+}
+
+/*contactForm section */
+
+main .contactForm fieldset{
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+main .contactForm fieldset{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 204, 188, 1);
+}
+
+main .contactForm fieldset label.top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+
+}
+
+main .contactForm fieldset label.top input {
+    height: 1.5rem;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+main .contactForm label textarea {
+    width: 98%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Button Field */
+
+form .buttonField {
+    background-color: white;
+    border: none;
+}
+
+form .buttonField p{
+    margin-bottom: 2rem;
+    font-size: small;
+}
+
+
+form input.submitBtn {
+    display: block;
+    border: none;
+    background-color: rgba(0, 136, 122, 1);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 20rem;
+    margin: 0 auto 3rem auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #77A6F7;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+footer ul li {
+    padding: 5px;
+}
+
+footer ul li:nth-child(2) {
+    color: yellow;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

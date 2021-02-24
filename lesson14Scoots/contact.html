@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/contact/small.css">
+    <link rel="stylesheet" href="css/contact/medium2.css">
+    <link rel="stylesheet" href="css/contact/large2.css">
+    <title>~Scoots | Contact</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="index.html"><img src="images/brand-logo.png" alt="logo img"></a>
+        </div>
+        <ul>
+            <li class="logoText"><a href="index.html">~Scoots</a></li>
+            <li class="logoCatchPhrase"><a href="index.html">Explore the place</a></li>
+        </ul>
+
+    </header>
+
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a class="toggleMenu" href="#">&#9776; <span id="menuText">Menu</span></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <h2>Contact Us</h2>
+        <div class="title">
+            <h1>Were Here to Help</h1>
+            <p>Please provide your message below so we can provide you our best assisntance</p>
+        </div>
+        <section class="addressSection">
+            <div class="addressBox">
+                <div class="address">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59734.20779998045!2d-87.10671594298333!3d20.65378841778169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e4323d22d4e61%3A0xe8c10b783bab4adc!2sPlaya%20del%20Carmen%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sph!4v1614100787892!5m2!1sen!2sph"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="branchDetails">
+                        <h4>Scoots - Playa Del Carmen Branch</h4>
+                        <p><img src="images/lazyPlaceholderImage.png" data-src="images/map.png"> Av. Constituyentes
+                            esquina con Av 115, Ejidal, 77723 Playa del Carmen, Q.R., Mexico
+                        </p>
+                        <p><img src='images/lazyPlaceholderImage.png' data-src='images/phone.png'> +52 984-468-1579</p>
+                    </div>
+                </div>
+                <div class="address">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3737.742790701429!2d-86.97723018478837!3d20.475754786300534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sterminal%20puerta%20maya!5e0!3m2!1sen!2sph!4v1614100744671!5m2!1sen!2sph"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+                    <div class="branchDetails">
+
+                        <h4>Scoots - Puerta Maya Branch</h4>
+                        <p><img src="images/lazyPlaceholderImage.png" data-src="images/map.png"> Carretera Chankanaab km
+                            4.5, Carretera Costera Sur, 77600 San Miguel de Cozumel,
+                            Q.R.,
+                            Mexico</p>
+                        <p><img src='images/lazyPlaceholderImage.png' data-src='images/phone.png'> +52 984-122-7755</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="contactForm">
+
+            <form method="get" action="contactResponse.html">
+                <fieldset class="inputField">
+                    <label class="top">Name <input type="text" name="name" pattern="[a-zA-Z\s]{2,}"
+                            placeholder="Last Name, First Name">
+                    </label>
+                    <label class="top">Email* <input type="email" name="email" required
+                            placeholder="someone@mail.com"></label>
+                    <label class="top" for="area">Message*
+                        <textarea rows="10" cols="50" name="comment" id="area" required></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset class=buttonField>
+                    <p>Responses can take up to 2 business days because of COVID situation. We apologize for any inconvenience.</p>
+                    <input type="submit" value="Send" class="submitBtn">
+                </fieldset>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <ul>
+            <li>&#169;<span id="currentYear"></span>| Naga City, Phil | BYU - I Online Learning | <a
+                    href="home-wireframes.html" target="_blank">Blueprint</a></li>
+            <li>Last Updated: <span id="dateTime2"></span></li>
+        </ul>
+    </footer>
+
+
+    <script src="script/dateTime.js"></script>
+    <script class=responsive src="script/main.js"></script>
+    <script src="script/lazyload.js"></script>
+
+
+
+
+    <!--Google Webfont-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Finger Paint', 'Roboto Slab', 'Open Sans', 'Cinzel', 'Poppins', 'Merriweather',
+                    'Acme', 'Lexend Mega'
+                ]
+            }
+        });
+    </script>
+
+</body>
+
+</html>
