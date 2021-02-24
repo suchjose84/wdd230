@@ -189,6 +189,7 @@ main section {
     margin: 0 auto;
     margin-bottom: .2rem;
     width: 96%;
+    max-width: 600px;
 }
 main section .addressBox .address {
     margin-bottom: 1.5rem;

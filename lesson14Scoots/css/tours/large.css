@@ -11,32 +11,6 @@
 
     /* Main Page */
 
-    main .tourBox .cardBox .card .divSummary {
-        display: block;
-        
-    }
-
-    main .tourBox .cardBox .card .divPicSummary .divSummary h4{
-        font-size: 1.8rem;
-    }
-
-    main .tourBox .cardBox .card .divSummary .description{
-        display: block;
-        padding: .5rem 0 2.5rem 0;
-        
-    }
-
-
-    main .tourBox .cardBox .card .divSummary .priceBox {
-        float: right;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding-left: 3rem;
-        padding-bottom: 3rem;
-        
-    }
-
 
 }
 
