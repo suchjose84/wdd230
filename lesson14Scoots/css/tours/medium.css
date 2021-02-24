@@ -49,6 +49,23 @@
 
     /*Main */
 
+    main .tourBox .cardBox .card .divPicSummary .divSummary h4{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    main .tourBox .cardBox .card .divPicSummary .divSummary p{
+        font-size: 1rem;
+        
+    }
+
+    main .tourBox .cardBox .card .divPicSummary .divSummary .divInline p{
+        font-size: 1rem;
+    }
+
+    
+
+
 
     /*end medium*/
 

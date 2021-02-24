@@ -10,6 +10,26 @@
     }
 
     /* Main Page */
+    
+    main .tourBox .cardBox .card .divPicSummary .divSummary h4{
+        font-size: 1.8rem;
+
+    }
+
+    main .tourBox .cardBox .card .divPicSummary .divSummary p{
+        font-size: 1rem;
+        
+    }
+
+    main .tourBox .cardBox .card .divPicSummary .divSummary p:nth-child(3){
+        font-size: .8rem;
+        margin-bottom: 1rem;
+        
+    }
+
+    main .tourBox .cardBox .card .divSummary .description{
+        display: block;
+    }
 
 
 }

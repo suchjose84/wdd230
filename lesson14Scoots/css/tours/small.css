@@ -214,7 +214,7 @@ main .tourBox .cardBox .card .divPicSummary img{
     
 }
 
-main .tourBox .cardBox .card .divSummary {
+main .tourBox .cardBox .card .divPicSummary .divSummary {
     display: flex;
     flex-direction: column;
     width: 100%;
