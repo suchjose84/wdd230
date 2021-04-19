@@ -95,7 +95,7 @@ fetch(apiURL)
 
             var hours = date.getHours();
             var minutes = date.getMinutes();
-            var ampm = hours >= 12 ? 'PM' : 'AM';
+            var ampm = hours >= 12 ? ' PM' : ' AM';
             var options = {
                 month: "short"
             };
