@@ -25,14 +25,14 @@ fetch(apiURL)
         let multiplier = Math.pow(10, digits);
 
         if (t <= 50 && s >= 3) {
-            windChill = (35.74 + (0.6215 * t)) - (35.75 * s ** 0.16) + (0.4275 * t * s ** 0.16)
-            windChill = (Math.round(windChill * multiplier) / multiplier).toString();
+            wchill = (35.74 + (0.6215 * t)) - (35.75 * s ** 0.16) + (0.4275 * t * s ** 0.16)
+            wchill = (Math.round(wchill * multiplier) / multiplier).toString();
         } else {
-            windChill = "n/a";
+            wchill = "n/a";
 
         }
 
-        wchill.innerHTML = windChill + '&#8457';
+        wchill.innerHTML = wchill + '&#8457';
 
 
     });
